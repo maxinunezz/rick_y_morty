@@ -1,1 +1,43 @@
-
+.favorites {
+  background-attachment: fixed;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  justify-self: start;
+}
+.order {
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 4px;
+  border: 1px solid #ccc;
+  border-radius: 40px;
+  font-size: 14px;
+  color: #41df08;
+  cursor: pointer;
+  transition: all 1.2s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+.order:hover {
+  background-color: #010101;
+  border-color: #62d11d;
+  background-color: #050404;
+  border-color: #040404;
+  transform: rotate(-4deg);
+}
+.filter {
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 4px;
+  border: 1px solid #ccc;
+  border-radius: 40px;
+  font-size: 14px;
+  color: #41df08;
+  cursor: pointer;
+  transition: all 1.2s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+.filter:hover {
+  background-color: #010101;
+  border-color: #62d11d;
+  background-color: #050404;
+  border-color: #040404;
+  transform: rotate(4deg);
+}

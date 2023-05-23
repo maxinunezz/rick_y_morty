@@ -5,6 +5,7 @@ const EstiloTarjeta = styled.div`
   background-attachment: fixed;
   width: 100%;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   justify-content: center;
   justify-self: start;

@@ -1,5 +1,5 @@
 import { ButtonD, ButtonE } from "../../button";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import styles from "./Card.module.css";
 import { addFav, removeFav } from "../../Redux/action"; //es lo que tengo que despachar
 import { connect } from "react-redux"; //necesario para el mapdispatchtoprop
@@ -37,6 +37,7 @@ const Card = ({
       }
     });
   }, [myFavorites]);
+  const { pathname } = useLocation();
   return (
     <div className={styles.card}>
       <div className={styles.botones}>
@@ -44,7 +45,9 @@ const Card = ({
           <ButtonE onClick={handleFavorite}>{isFav ? "💚" : "🤍"}</ButtonE>
         </div>
         <div className={styles.botonesClose}>
-          <ButtonD onClick={() => onClose(id)}>❌</ButtonD>
+          {pathname !== "/favorites" && (
+            <ButtonD onClick={() => onClose(id)}>❌</ButtonD>
+          )}
         </div>
       </div>
 
