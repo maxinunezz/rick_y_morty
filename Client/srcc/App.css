@@ -1,0 +1,13 @@
+.App {
+  text-align: center;
+  min-height: 100vh;
+  background-image: linear-gradient(
+      rgba(18, 28, 63, 0.349),
+      rgba(55, 58, 35, 0.75)
+    ),
+    url("C:\Users\maxic\OneDrive\Escritorio\rick-y-morty-fondo.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  font: italic small-caps bold 16px/2 cursive;
+}

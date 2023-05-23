@@ -1,0 +1,40 @@
+.container img {
+  width: 300px;
+  height: auto;
+  border-radius: 50%;
+  margin: 10px;
+  float: left;
+  top: 1.5cm;
+  left: 9cm;
+}
+.yo {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: right;
+  justify-content: flex-end;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+}
+
+p {
+  padding: 0;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+
+  font-size: 20px;
+  margin: 1px 0;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-weight: 5;
+  text-align: center;
+  color: rgb(237, 237, 243);
+}
+.boca {
+  color: blue;
+}
+
+.juniors {
+  color: yellow;
+}

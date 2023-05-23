@@ -1,0 +1,78 @@
+Form {
+  max-width: 435px;
+  margin: 0 auto;
+  padding: 17px;
+  background-color: #ddfcd7;
+  border-radius: 95px;
+  box-shadow: 0 0 100px rgba(0, 0, 0, 0.3);
+}
+form h2 {
+  font-size: 23px;
+  text-align: center;
+  color: #66ff66;
+  margin-bottom: 0px;
+  text-shadow: 2px 2px #000;
+}
+form input[type="text"],
+form input[type="email"],
+form textarea {
+  display: block;
+  color: #0b0b0b;
+  width: 95%;
+  padding: 5px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 50px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  font-family: "Roboto", sans-serif;
+}
+form input[type="submit"] {
+  display: inline-block;
+  background-color: #66ff66;
+  color: #e1dada;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(7, 7, 7, 0.1);
+  font-family: "Roboto", sans-serif;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+form input[type="submit"]:hover {
+  background-color: #050505;
+}
+form label {
+  display: block;
+  margin-bottom: 0px;
+  font-weight: bold;
+  font-size: 25px;
+  color: #6df858;
+  text-shadow: 2px 2px #000;
+}
+
+form input[type="text"],
+form input[type="password"],
+form textarea {
+  display: block;
+  color: #0f0f0f;
+  width: 95%;
+  padding: 5px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 50px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  font-family: "Roboto", sans-serif;
+}
+form textarea {
+  height: 15px;
+}
+form input[type="submit"] {
+  background-color: #f1f8ed;
+  text-transform: uppercase;
+  font-size: 24px;
+  letter-spacing: 2px;
+  margin-top: 30px;
+}
+form input[type="submit"]:hover {
+  background-color: #ee8606;
+}
