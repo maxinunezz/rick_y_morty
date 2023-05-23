@@ -1,24 +1,23 @@
-import { addFav, removeFav, filterCards, orderCards } from "./action";
-import { ADD_FAV } from "./actionTypes";
+import { ADD_FAV, REMOVE_FAV, ORDER, FILTER } from "./actionTypes";
 const initialState = {
   myFavorites: [],
   allCharacters: [],
 };
 const reducer = (state = initialState, { type, payLoad }) => {
   switch (type) {
-    case "ADD_FAV":
+    case ADD_FAV:
       return {
         ...state,
         myFavorites: payLoad,
         allCharacters: payLoad,
       };
-    case removeFav().type:
+    case REMOVE_FAV:
       return {
         ...state,
         myFavorites: payLoad,
         allCharacters: payLoad,
       };
-    case filterCards().type:
+    case FILTER:
       const allCharactersFiltered = state.allCharacters.filter(
         (character) => character.gender === payLoad
       );
@@ -29,7 +28,7 @@ const reducer = (state = initialState, { type, payLoad }) => {
             ? [...state.allCharacters]
             : allCharactersFiltered,
       };
-    case orderCards().type:
+    case ORDER:
       const allCharactersCopy = [...state.allCharacters];
       return {
         ...state,
