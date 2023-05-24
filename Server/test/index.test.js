@@ -17,8 +17,8 @@ const character = {
 describe("Route testing ", () => {
   describe("GET /rickandmorty/character/:id", () => {
     it("Status response: 200", async () => {
-      const response = await request.get("/rickandmorty/character/1");
-      expect(response.statusCode).toBe(200);
+      //it hace la peticion asincrona
+      await request.get("/rickandmorty/character/1").expect(200);
     });
     it('Responding with an object containing properties: "id","name","species","gender","status","origin","image"', async () => {
       const response = await request.get("/rickandmorty/character/1");
@@ -30,7 +30,7 @@ describe("Route testing ", () => {
       const response = await request.get(
         "/rickandmorty/character/1834758937fd"
       );
-      expect(response.statusCode).toBe(500);
+      expect(response.statusCode).toBe(500); //el tobe solo hace falta si guardo la request en una const, pero puedo hacerlo sin la const y enmcadenar con un . el expect
     });
   });
   describe("GET /rickandmorty/login", () => {
@@ -64,7 +64,7 @@ describe("Route testing ", () => {
   });
 
   describe("DELETE /rickandmorty/favorites/:id", () => {
-    it("f the requested ID does not exist, it should return an array with all the favorites", async () => {
+    it("if the requested ID does not exist, it should return an array with all the favorites", async () => {
       const response = await request.delete("/rickandmorty/fav/maxi321");
       expect(response.body.length).toBe(2);
     });
