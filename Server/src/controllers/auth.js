@@ -1,15 +1,14 @@
 const { User } = require("../DB_connection");
 
-const login = async (req, res) => {
+const auth = async (req, res) => {
   try {
     const { email, password } = req.query;
     if (!email || !password)
       return res.status(400).send("I need more information");
     console.log(User);
-    const user = await User.findOne({
-      where: {
-        email,
-      },
+    const user = await User.create({
+      email,
+      password,
     });
     console.log(user);
     if (!user) return res.status(404).send("User not found");
@@ -22,4 +21,4 @@ const login = async (req, res) => {
   }
 };
 
-module.exports = login;
+module.exports = auth;

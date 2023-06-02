@@ -1,5 +1,19 @@
 import styled from "./About.module.css";
 import yo from "../../assets/img/git_pic.jpg";
+import React from "react";
+import botonGithub from "../../assets/img/botonGithub.png";
+import botonInstagram from "../../assets/img/botonInstagram.png";
+import logoLinkedin from "../../assets/img/logoLinkedin.webp";
+const handleRedirectGithub = () => {
+  window.location.href = "https://github.com/maxinunezz";
+};
+const handleRedirectInstagram = () => {
+  window.location.href = "https://www.instagram.com/nunez_maximiliano/";
+};
+const handleRedirectLinkedin = () => {
+  window.location.href =
+    "https://www.linkedin.com/in/patricio-maximiliano-nu%C3%B1ez/";
+};
 const MiPersona = () => {
   return (
     <div className={styled.container}>
@@ -35,6 +49,23 @@ const MiPersona = () => {
           a drive to succeed. I'm excited to see where this journey takes me,
           and I hope you'll join me along the way!
         </p>
+        <div>
+          <button
+            className={styled.logoLinkedin}
+            onClick={handleRedirectLinkedin}
+          >
+            <img src={logoLinkedin} alt="logo Li" />
+          </button>
+          <button className={styled.botonGithub} onClick={handleRedirectGithub}>
+            <img src={botonGithub} alt="logo github" />
+          </button>
+          <button
+            className={styled.botonInstagram}
+            onClick={handleRedirectInstagram}
+          >
+            <img src={botonInstagram} alt="logo ig" />
+          </button>
+        </div>
       </div>
     </div>
   );

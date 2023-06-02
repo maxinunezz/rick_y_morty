@@ -5,16 +5,7 @@
   margin: 10px;
   float: left;
   top: 1.5cm;
-  left: 9cm;
-}
-.yo {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  align-items: right;
-  justify-content: flex-end;
-  font-family: "Poppins", sans-serif;
-  text-align: center;
+  left: 90cm;
 }
 
 p {
@@ -37,4 +28,45 @@ p {
 
 .juniors {
   color: yellow;
+}
+.botonGithub img {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+.botonGithub {
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0);
+  border-color: rgba(0, 0, 0, 0);
+}
+
+.botonInstagram img {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.botonInstagram {
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0);
+  border-color: rgba(0, 0, 0, 0);
+}
+
+.logoLinkedin img {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin: 10px;
+  border-radius: 50%;
+}
+.logoLinkedin {
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0);
+  border-color: rgba(0, 0, 0, 0);
 }

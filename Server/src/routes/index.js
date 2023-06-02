@@ -1,16 +1,17 @@
 //al ser una ruta no ncesita un return, solo lleva y trae informacion
-const { login } = require("../controllers/login");
-const { getCharById } = require("../controllers/getCharById");
-const { postFav, deleteFav } = require("../controllers/handleFavorites.js");
 const express = require("express");
 const router = express.Router();
 
-router.get("/character/:id", getCharById);
+const getCharById = require("../controllers/getCharById");
+const login = require("../controllers/login");
+const postFav = require("../controllers/postFav");
+const postUser = require("../controllers/postUser.js");
+const deleteFav = require("../controllers/deleteFav");
 
 router.get("/login", login);
-
+router.post("/login", postUser);
 router.post("/fav", postFav);
-
 router.delete("/fav/:id", deleteFav);
+router.get("/character/:id", getCharById);
 
 module.exports = router;
